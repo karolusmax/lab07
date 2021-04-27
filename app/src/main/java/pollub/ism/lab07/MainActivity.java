@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //setContentView(R.layout.activity_main);
-       //bazaDanych = new MagazynBazaDanych(this);
+        setContentView(R.layout.activity_main);
         bazaDanych = Room.databaseBuilder(getApplicationContext(), BazaMagazynowa.class, BazaMagazynowa.NAZWA_BAZY)
                 .allowMainThreadQueries().build();
 
